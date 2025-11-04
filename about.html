@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Website
+        </title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: rgb(192, 192, 146);
+        }
+        ul{
+            background-color: black;
+            color: aliceblue;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: visible;
+            height: 50px;
+            width: 100%;
+        }
+        li{
+            float: left;
+        }
+        li a{
+        display: block;
+        color: aliceblue;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+        .pagein{
+        background-color:yellow;
+        color: black;
+        height: 22px;
+        }
+        li a:hover{
+        background-color: aqua;
+        color: black;
+        height: 22px;
+        }
+        h1{
+        color: aqua;
+        text-align: center;
+        text-decoration: solid;
+        background-color:red;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        height: 44px;
+        width: 100%;
+        position: static;
+        }
+        .dropdown{
+        position: relative;
+        display: inline-block;
+        margin-left: auto;
+        }
+        .content{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        box-shadow: 0px 8px 10px 0px blue;
+        padding: 20px;
+        background-color: black;        
+        }
+        .btn:hover{
+            background-color: aqua;
+            color: black;
+           
+        }
+        .dropdown:hover .content{
+        display: block;
+        }
+        .btn{
+        border:none;
+        padding: 10px;
+        background-color: black;
+        height: 46px;
+        left: auto;
+        right: 0;
+        color: aliceblue;
+        cursor: pointer;
+        }
+        .content a{
+        display: block;
+        }
+          .benifit{
+            background-color: rgb(192, 192, 146);
+            padding: 5px; 
+            text-align: justify;
+            font-size: 25px;   
+        }
+        #head{
+            font-size: 25px;
+            text-decoration: solid underline;
+        }
+        </style>
+    </head>
+    <body><div>
+        <h1><i>Student Details-News</i></h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a class="pagein" href="about.html">About</a></li>
+            <li class="dropdown">
+                <button class="btn">More</button>
+                <div class="content">
+                    <a href="https://www.youtube.com/">youtube</a>
+                    <a href="###">projects</a>
+                    <a href="https://www.google.com/">exit</a>
+                </div>
+            </li>
+        </ul></div>
+         <div class="benifit">
+            <h2 id="head">Created by:</h2>
+            <p>Vishesh G Devanur</p>
+            <p>This is my first web development and it still needs to upgraded it will done soon.</p>
+         </div>
+    </body>
+</html>

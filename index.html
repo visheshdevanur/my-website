@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Website
+        </title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: bisque;
+        }
+        ul{
+            background-color: black;
+            color: aliceblue;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: visible;
+            height: 50px;
+            width: 100%;
+        }
+        li{
+            float: left;
+        }
+        li a{
+        display: block;
+        color: aliceblue;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+        .pagein{
+        background-color:yellow;
+        color: black;
+        height: 22px;
+        }
+        li a:hover{
+        background-color: aqua;
+        color: black;
+        height: 22px;
+        }
+        h1{
+        color: aqua;
+        text-align: center;
+        text-decoration: solid;
+        background-color:red;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        height: 44px;
+        width: 100%;
+        position: static;
+        }
+        .dropdown{
+        position: relative;
+        display: inline-block;
+        margin-left: auto;
+        }
+        .content{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        box-shadow: 0px 8px 10px 0px blue;
+        padding: 20px;
+        background-color: black;        
+        }
+        .btn:hover{
+            background-color: aqua;
+            color: black;
+           
+        }
+        .dropdown:hover .content{
+        display: block;
+        }
+        .btn{
+        border:none;
+        padding: 10px;
+        background-color: black;
+        height: 46px;
+        left: auto;
+        right: 0;
+        color: aliceblue;
+        cursor: pointer;
+        }
+        .content a{
+        display: block;
+        }
+       
+        input[type=text] ,select{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid ;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit]{
+            width: 100%;
+            background-color: blue;
+            color: black;
+            padding: 14px 20px;
+            border: none;
+            margin: 8px 0;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: grey;
+        }
+        .login{
+            border-radius: 5px;
+            background-color: rgb(192, 192, 146);
+            padding: 20px;
+        }
+        .benifit{
+            background-color: rgb(192, 192, 146);
+            padding: 5px; 
+            text-align: justify;
+            font-size: 25px;   
+        }
+        #head{
+            font-size: 25px;
+            text-decoration: solid underline;
+        }
+    </style>
+    </head>
+    <body><div>
+        <h1><i>Student Details</i></h1>
+        <ul>
+            <li><a class="pagein" href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <button class="btn">More</button>
+                <div class="content">
+                    <a href="https://www.youtube.com/">youtube</a>
+                    <a href="#">projects</a>
+                    <a href="https://www.google.com/">exit</a>
+                </div>
+            </li>
+        </ul></div>
+        <div class="login">
+        <h2>You Can Login here by entering your name ,USN and branch:</h2>
+        <form>
+            <label for="n">enter your name</label> 
+            <input type="text" id="n" name="name" placeholder="enter name">
+
+            <label for="u">enter your usn</label> 
+            <input type="text" id="u" name="usn" placeholder="enter usn">
+
+            <label for="branch">Branch</label>
+            <select>
+                <option>CSE</option>
+                <option>CE</option>
+                <option>EC</option>
+                <option>MECH</option>
+                <option>AIML</option>               
+                <option>other</option>
+            </select>
+            <input type="submit" value="submit">
+        </form>
+        </div>
+         <div class="benifit">
+            <h3>Note:Give your feedback</h3>
+            <h2 id="head">Benifits of this Website</h2>
+            <p>website makes information available 24/7 — anyone can access details anytime, from anywhere, using the internet.Websites allow instant interaction between users and administrators through forms, contact pages, or feedback sections.</p>
+         </div>
+    </body>
+</html>
